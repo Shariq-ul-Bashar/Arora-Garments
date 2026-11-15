@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --ag-canvas: #FFFFFF;
+  --ag-surface: #F6F7F8;
+  --ag-card: #FFFFFF;
+  --ag-ink: #111827;
+  --ag-muted: #525866;
+  --ag-border: #E5E7EB;
+  --ag-primary: #111827;
+  --ag-secondary: #374151;
+  --ag-accent: #B45309;
+  --ag-btn-bg: #111827;
+  --ag-btn-text: #FFFFFF;
+  --ag-badge-bg: #F3F4F6;
+  --ag-badge-text: #111827;
+  --ag-radius: 6px;
+  --ag-btn-radius: 6px;
+  --ag-card-border: 1px solid #E5E7EB;
+  --ag-card-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
+  --ag-hero-overlay: linear-gradient(90deg, rgba(17,24,39,0.72) 0%, rgba(17,24,39,0.32) 55%, rgba(17,24,39,0.08) 100%);
+  --ag-font-heading: "Poppins", "Inter", "Hind", "Noto Sans Devanagari", sans-serif;
+  --ag-font-body: "Inter", "Hind", "Noto Sans Devanagari", -apple-system, sans-serif;
+  --ag-heading-weight: 600;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--ag-font-body);
+    background-color: var(--ag-canvas);
+    color: var(--ag-ink);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--ag-canvas);
+    color: var(--ag-ink);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .ag-heading {
+    font-family: var(--ag-font-heading);
+    font-weight: var(--ag-heading-weight);
+  }
+}
+
+.ag-store-surface {
+  background-color: var(--ag-surface);
+}
+
+.ag-store-card {
+  background-color: var(--ag-card);
+  border: var(--ag-card-border);
+  border-radius: var(--ag-radius);
+  box-shadow: var(--ag-card-shadow);
+}
+
+.ag-btn-primary {
+  background-color: var(--ag-btn-bg);
+  color: var(--ag-btn-text);
+  border-radius: var(--ag-btn-radius);
+}
+
+.ag-btn-secondary {
+  background-color: transparent;
+  color: var(--ag-ink);
+  border: 1px solid var(--ag-border);
+  border-radius: var(--ag-btn-radius);
+}
+
+.ag-admin-shell {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #F4F5F7;
+  color: #111827;
+}
+
+.ag-admin-shell h1,
+.ag-admin-shell h2,
+.ag-admin-shell h3 {
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

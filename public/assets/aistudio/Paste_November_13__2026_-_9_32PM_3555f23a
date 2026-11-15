@@ -1,0 +1,1274 @@
+# MASTER PROMPT — ARORA GARMENTS
+## 2026 PREMIUM FULL-STACK E-COMMERCE PLATFORM
+
+Act as an elite team consisting of:
+- Senior Full-Stack Software Architect
+- Professional E-commerce UI/UX Designer
+- Next.js Developer
+- Supabase Database Engineer
+- Security Engineer
+- E-commerce Conversion Specialist
+- QA and Performance Engineer
+
+Your task is to DESIGN, DEVELOP, TEST AND DELIVER a complete production-ready e-commerce platform for ARORA GARMENTS.
+
+This is a real business website. Do not create a demo, static template, frontend-only project or fake working interface.
+
+Build a complete application with a real frontend, backend, database, authentication, storage, order processing, inventory, admin panel and integrations.
+
+Do not stop after generating the homepage or design preview.
+
+# 1. OFFICIAL BUSINESS INFORMATION
+
+Brand: ARORA GARMENTS
+
+Tagline: ULTIMATE FASHION DESTINATION
+
+Business Type: Family Fashion & Readymade Garments
+
+Physical Store Address:
+CV59+RH9, Faislabad, Bulandshahr, Uttar Pradesh 203001, India.
+
+Contact Numbers:
++91 9897694349
++91 9759147004
+
+Instagram Accounts:
+https://www.instagram.com/arora_garments001/
+https://www.instagram.com/arora._.garments/
+
+Operating Hours:
+Monday – Sunday
+10:00 AM – 8:30 PM
+
+Business Location:
+Bulandshahr, Uttar Pradesh, India.
+
+Shipping:
+Local website checkout for Bulandshahr and configured nearby serviceable areas.
+
+WhatsApp enquiries and orders can support Pan-India requests, subject to administrator confirmation of delivery availability and charges.
+
+Business Currency: INR (₹).
+
+Time Zone: Asia/Kolkata.
+
+Language: English and Hindi-ready architecture.
+
+Never invent GSTIN, email address, business registration, customer reviews, prices, delivery charges or other unverified information.
+
+Make all business information editable through the admin dashboard.
+
+# 2. MAIN PRODUCT DEPARTMENTS
+
+The entire store must be structured around four major departments.
+
+A. MEN'S WEAR
+- Shirts
+- T-Shirts
+- Jeans
+- Trousers
+- Kurtas
+- Kurta Pajama
+- Winter Wear
+- Casual Wear
+- Formal Wear
+- Trending Fashion
+
+B. WOMEN'S WEAR
+- Tops
+- Jeans
+- Ethnic Wear
+- Casual Wear
+- Traditional Wear
+- Seasonal Collections
+- Trending Fashion
+
+C. KIDS WEAR
+- Boys Clothing
+- Girls Clothing
+- Kids Casual Wear
+- Kids Ethnic Wear
+- Seasonal Clothing
+
+D. FOOTWEAR
+- Men's Footwear
+- Women's Footwear
+- Kids Footwear
+- Sneakers
+- Casual Shoes
+- Sandals
+- Slippers
+- Formal Footwear
+
+All categories and subcategories must be dynamically manageable from the admin dashboard.
+
+Administrators must be able to add new categories, rename categories, remove categories, reorder them and create subcategories without editing code.
+
+# 3. DESIGN AND CREATIVE DIRECTION
+
+Create a completely original premium fashion e-commerce experience.
+
+Reference:
+Use the attached SHOP.CO website screenshot as a structural and usability reference.
+
+Do not copy the reference pixel by pixel.
+
+Design should feel like a professionally designed international fashion retail brand in 2026.
+
+DESIGN PRINCIPLES:
+
+- Premium editorial fashion aesthetic.
+- Modern typography system.
+- Sophisticated spacing and alignment.
+- High-quality photography.
+- Professional product grids.
+- Elegant navigation.
+- Strong visual hierarchy.
+- Clean and intuitive interactions.
+- Consistent design system.
+- Refined transitions.
+- Excellent mobile shopping experience.
+
+Create a distinctive brand identity for ARORA GARMENTS.
+
+Explore a sophisticated black, off-white and neutral colour system with carefully selected fashion accent colours.
+
+Do not make the website look like a generic AI-generated template.
+
+Avoid excessive gradients, unnecessary glassmorphism, repetitive rounded cards, excessive shadows and distracting animations.
+
+Use a professional font pairing suitable for a modern fashion brand.
+
+Create reusable design tokens for colours, typography, spacing, buttons, cards and responsive layouts.
+
+# 4. COMPLETE WEBSITE STRUCTURE
+
+Create these customer-facing routes:
+
+1. Homepage
+2. All Products
+3. Men's Wear
+4. Women's Wear
+5. Kids Wear
+6. Footwear
+7. Individual Category Pages
+8. New Arrivals
+9. Trending Collection
+10. Best Sellers
+11. Seasonal Collections
+12. Product Details
+13. Search Results
+14. Wishlist
+15. Shopping Cart
+16. Checkout
+17. Order Confirmation
+18. Customer Login
+19. Customer Registration
+20. Customer Account
+21. My Orders
+22. Order Details
+23. Order Tracking
+24. About Us
+25. How to Order
+26. Contact Us
+27. Store Location
+28. FAQ
+29. Shipping Policy
+30. Return and Refund Policy
+31. Privacy Policy
+32. Terms and Conditions
+
+Every route must be functional and responsive.
+
+# 5. PREMIUM HOMEPAGE
+
+Build an exceptional fashion homepage.
+
+Include:
+
+- Promotional announcement bar.
+- Responsive navigation.
+- Brand logo.
+- Search functionality.
+- Account icon.
+- Wishlist icon.
+- Shopping bag icon with live item count.
+- Large editorial hero section.
+- Shop by Department.
+- Men's Collection.
+- Women's Collection.
+- Kids Collection.
+- Footwear Collection.
+- New Arrivals.
+- Trending Now.
+- Best Sellers.
+- Seasonal Fashion Campaign.
+- Featured Product Grid.
+- Promotional Banners.
+- Style Inspiration.
+- Store Information.
+- Pan-India WhatsApp Enquiry section.
+- Newsletter Subscription.
+- Professional Footer.
+
+Create a strong first impression.
+
+The homepage must be visually impressive without becoming overcrowded.
+
+Every section must be editable and reorderable through the admin panel.
+
+Provide controls to hide, show, create, delete and reorder homepage sections.
+
+# 6. PRODUCT DETAIL EXPERIENCE
+
+Create a premium product detail page.
+
+Each product must support:
+
+- Product title.
+- Product description.
+- SKU.
+- Category.
+- Subcategory.
+- Regular price.
+- Discounted price.
+- Discount percentage.
+- Multiple images.
+- Image gallery.
+- Image zoom.
+- Size selector.
+- Colour selector.
+- Variant-specific stock.
+- Quantity selector.
+- Availability indicator.
+- Product information.
+- Size guide.
+- Shipping availability.
+- Return policy information.
+- Related products.
+- Recently viewed products.
+- Wishlist functionality.
+
+Add sticky Add to Cart functionality where suitable.
+
+Disable unavailable variants.
+
+Show accurate stock availability.
+
+Never allow customers to purchase unavailable variants.
+
+# 7. ADVANCED SEARCH AND FILTERING
+
+Implement a fully functional product discovery system.
+
+Search by:
+- Product name.
+- SKU.
+- Category.
+- Brand or product tags.
+
+Filters:
+- Department.
+- Category.
+- Price range.
+- Size.
+- Colour.
+- Availability.
+- Discount.
+- Product type.
+
+Sorting:
+- Newest.
+- Popularity.
+- Price low to high.
+- Price high to low.
+- Best selling.
+
+Provide responsive mobile filters and a professional desktop filter sidebar.
+
+Search results must come from the actual database.
+
+# 8. ADVANCED ADMIN DASHBOARD
+
+Create a separate administrator application:
+
+/admin
+
+This is one of the most important parts of the project.
+
+The owner must be able to manage the entire website without coding.
+
+ADMIN DASHBOARD OVERVIEW:
+
+Show:
+- Total revenue.
+- Total orders.
+- Today's sales.
+- Weekly sales.
+- Monthly sales.
+- Total products.
+- Total customers.
+- Pending orders.
+- Processing orders.
+- Shipped orders.
+- Delivered orders.
+- Cancelled orders.
+- Low-stock products.
+- Recent orders.
+- Sales charts.
+- Best-selling products.
+
+Use real database values, not static numbers.
+
+PRODUCT MANAGEMENT:
+
+Allow administrators to:
+
+- Create products.
+- Edit products.
+- Delete products.
+- Archive products.
+- Duplicate products.
+- Publish/unpublish products.
+- Upload multiple product photographs.
+- Change product prices.
+- Configure discounts.
+- Add descriptions.
+- Manage categories.
+- Manage sizes.
+- Manage colours.
+- Manage SKUs.
+- Configure stock for every variant.
+- Mark featured products.
+- Mark best sellers.
+- Mark new arrivals.
+- Manage product tags.
+
+Provide bulk actions and CSV import/export.
+
+IMAGE MANAGEMENT:
+
+Allow uploading images directly from a computer.
+
+Support:
+- Multiple image uploads.
+- Image previews.
+- Image ordering.
+- Image replacement.
+- Image deletion.
+- Alt text.
+- Image URL input.
+- Storage usage visibility.
+
+Store uploaded images in Supabase Storage.
+
+Use appropriate compression and responsive image delivery.
+
+COLLECTION MANAGEMENT:
+
+Create and manage:
+- New Arrivals.
+- Trending.
+- Best Sellers.
+- Seasonal Collections.
+- Promotional Collections.
+- Custom Campaigns.
+
+Allow administrators to add and remove products from collections.
+
+HOMEPAGE MANAGEMENT:
+
+Provide a visual content management interface for:
+
+- Hero banners.
+- Promotional banners.
+- Category sections.
+- Product sections.
+- Section headings.
+- Descriptions.
+- Images.
+- Buttons and links.
+- Display order.
+- Visibility settings.
+
+Allow owners to update homepage content without developer assistance.
+
+# 9. MULTI-ADMIN AND STAFF PERMISSIONS
+
+Support multiple administrator accounts.
+
+Create role-based access control.
+
+OWNER:
+- Full access.
+- Manage administrators.
+- Manage permissions.
+- Manage products.
+- Manage inventory.
+- Manage orders.
+- Manage customers.
+- Manage website settings.
+- View analytics.
+- Manage integrations.
+
+MANAGER:
+- Manage products.
+- Manage inventory.
+- Manage orders.
+- View customers.
+- View analytics.
+
+ORDER STAFF:
+- View orders.
+- Confirm orders.
+- Update order status.
+- Print invoices.
+- Manage shipping information.
+
+CONTENT STAFF:
+- Manage banners.
+- Manage product descriptions.
+- Manage collections.
+- Upload photographs.
+
+Only the owner can create or remove administrator accounts and change sensitive permissions.
+
+Create an activity log recording important administrative actions.
+
+Never use a public registration page for administrator access.
+
+# 10. ADVANCED INVENTORY MANAGEMENT
+
+This store sells clothing and footwear, so inventory must be variant-based.
+
+Example:
+
+Product: Men's Casual Shirt
+
+Variants:
+
+- Size S / Blue / Stock 5
+- Size M / Blue / Stock 10
+- Size L / Blue / Stock 7
+- Size XL / Blue / Stock 3
+- Size M / Black / Stock 8
+
+Each variant must have an independent SKU and stock quantity.
+
+Implement:
+- Stock tracking.
+- Stock reservations.
+- Low-stock alerts.
+- Out-of-stock status.
+- Inventory history.
+- Manual stock adjustments.
+- Stock movement records.
+- Stock restoration on eligible cancellations.
+- Stock reconciliation.
+
+Prevent overselling using server-side database transactions or equivalent safe atomic operations.
+
+Never trust stock quantities supplied by the browser.
+
+# 11. CART AND CHECKOUT
+
+Implement a real shopping cart.
+
+Features:
+- Add to cart.
+- Remove products.
+- Update quantities.
+- Select sizes.
+- Select colours.
+- Calculate subtotal.
+- Apply coupon.
+- Calculate delivery charges.
+- Calculate applicable taxes.
+- Display final payable amount.
+
+Persist carts appropriately for authenticated customers.
+
+Guest shopping should also be supported.
+
+CHECKOUT FIELDS:
+
+- Customer name.
+- Mobile number.
+- Email address (optional).
+- Address.
+- Locality.
+- City.
+- State.
+- PIN code.
+- Delivery instructions.
+
+LOCAL DELIVERY VALIDATION:
+
+Website checkout must be restricted to Bulandshahr and nearby delivery locations configured by the administrator.
+
+Create an admin interface to manage serviceable PIN codes and delivery fees.
+
+If a PIN code is unavailable, show a helpful message and offer WhatsApp enquiry.
+
+WhatsApp orders can be requested from other Indian locations, with manual delivery confirmation.
+
+# 12. PAYMENT SYSTEM
+
+Implement two payment methods:
+
+A. CASH ON DELIVERY
+
+- Allow COD where serviceable.
+- Save payment method.
+- Set payment status to pending.
+- Track payment collection.
+- Allow administrator to mark payment collected.
+
+B. ONLINE PAYMENT
+
+Integrate Razorpay.
+
+Implement:
+- Order creation on server.
+- Payment initiation.
+- Payment verification.
+- Verified payment status.
+- Webhook verification.
+- Duplicate payment protection.
+- Failed payment handling.
+- Payment transaction records.
+
+Never mark an order as paid based only on a frontend success message.
+
+Use INR currency.
+
+If Razorpay credentials are unavailable, keep the integration disabled and allow COD checkout to work.
+
+Do not store card details.
+
+# 13. WHATSAPP BUSINESS INTEGRATION
+
+Use WhatsApp Business Cloud API where configured.
+
+Contact numbers:
+
++91 9897694349
++91 9759147004
+
+Provide configurable primary and secondary WhatsApp numbers.
+
+CUSTOMER FEATURES:
+
+- Floating WhatsApp contact button.
+- Product-specific WhatsApp enquiry.
+- Order enquiry.
+- Order assistance.
+- Delivery enquiry.
+- Customer support.
+
+WHATSAPP ORDER FLOW:
+
+1. Customer selects products.
+2. Customer selects sizes and colours.
+3. Customer enters contact details.
+4. System prepares an order enquiry.
+5. Customer sends the message through WhatsApp.
+6. Admin reviews the request.
+7. Admin confirms product availability and delivery.
+8. Confirmed orders are saved in the order management system.
+
+Do not treat an unverified WhatsApp message as a confirmed paid order.
+
+ADMIN NOTIFICATIONS:
+
+When properly configured, send:
+- New order notifications.
+- Order confirmation.
+- Processing updates.
+- Shipping updates.
+- Delivery updates.
+
+Use approved WhatsApp templates wherever required by Meta policies.
+
+Keep normal website ordering available even if WhatsApp API is not configured.
+
+# 14. ORDER MANAGEMENT SYSTEM
+
+Create a complete order management module.
+
+Order statuses:
+
+- Pending Confirmation.
+- Confirmed.
+- Processing.
+- Packed.
+- Shipped.
+- Out for Delivery.
+- Delivered.
+- Cancellation Requested.
+- Cancelled.
+- Return Requested.
+- Returned.
+- Refund Pending.
+- Refunded.
+
+Every order must have:
+
+- Unique order ID.
+- Customer information.
+- Delivery address.
+- Ordered products.
+- Variant details.
+- Quantity.
+- Unit price.
+- Discounts.
+- Shipping charges.
+- Applicable taxes.
+- Final total.
+- Payment method.
+- Payment status.
+- Order source.
+- Order status.
+- Creation timestamp.
+
+Order source must identify:
+- Website.
+- WhatsApp.
+- Admin-created order.
+
+Create order search, date filters, status filters and export options.
+
+Allow authorized staff to update orders.
+
+Maintain order status history with timestamps and administrator identity.
+
+# 15. PROFESSIONAL INVOICE SYSTEM
+
+Generate a professional downloadable PDF invoice.
+
+Design the invoice like a modern retail e-commerce invoice.
+
+Include:
+
+- ARORA GARMENTS logo.
+- Business name.
+- Verified store address.
+- Verified business contact.
+- Invoice number.
+- Order ID.
+- Invoice date.
+- Customer name.
+- Customer mobile.
+- Billing address.
+- Shipping address.
+- Product name.
+- SKU.
+- Size.
+- Colour.
+- Quantity.
+- Unit price.
+- Discount.
+- Subtotal.
+- Shipping charges.
+- Applicable taxes.
+- Grand total.
+- Payment method.
+- Payment status.
+
+Provide:
+- Download PDF.
+- Print invoice.
+- Share invoice through WhatsApp.
+
+Make the invoice professional and easy to read.
+
+Do not invent GST registration or tax information.
+
+Provide configurable business invoice settings.
+
+# 16. CUSTOMER ACCOUNT SYSTEM
+
+Customers should be able to:
+
+- Register.
+- Log in.
+- Log out.
+- Reset passwords.
+- Manage profile.
+- Manage addresses.
+- View order history.
+- View individual orders.
+- Track deliveries.
+- Download invoices.
+- Request cancellations.
+- Submit return requests.
+- Manage wishlist.
+
+Protect all customer data.
+
+Customers must only access their own orders and personal information.
+
+# 17. ORDER TRACKING
+
+Create a dedicated tracking page.
+
+Customers can track orders using:
+- Order ID.
+- Verified registered mobile number or secure account access.
+
+Display a clear order progress timeline.
+
+Example:
+
+Order Placed → Confirmed → Processing → Packed → Shipped → Out for Delivery → Delivered.
+
+Allow administrators to add:
+- Courier partner.
+- Tracking number.
+- Tracking URL.
+- Shipping date.
+- Expected delivery date.
+
+Do not display fake tracking information.
+
+# 18. RETURN AND REFUND MANAGEMENT
+
+Build a configurable return and refund system.
+
+Allow customers to request returns within the business-defined return window.
+
+Admin must be able to:
+- Review requests.
+- Approve or reject.
+- Add notes.
+- Record return status.
+- Record refund status.
+
+Clearly display return policies before checkout.
+
+# 19. ADVANCED ANALYTICS
+
+Build an analytics dashboard with real database information.
+
+Metrics:
+
+- Total revenue.
+- Gross sales.
+- Net sales.
+- Number of orders.
+- Average order value.
+- Sales by day.
+- Sales by week.
+- Sales by month.
+- Best-selling products.
+- Top-performing categories.
+- Revenue by department.
+- COD orders.
+- Online payment orders.
+- Pending orders.
+- Cancelled orders.
+- Returned orders.
+- New customers.
+- Returning customers.
+- Inventory performance.
+
+Add date filters.
+
+Add CSV report export.
+
+Implement privacy-conscious event analytics for:
+- Product views.
+- Add to cart.
+- Checkout initiation.
+- Successful orders.
+
+Clearly distinguish actual sales from analytics estimates.
+
+Do not fabricate data or conversion rates.
+
+# 20. DATABASE ARCHITECTURE — SUPABASE
+
+Use Supabase as the primary backend.
+
+Create a well-designed relational PostgreSQL database.
+
+Required tables:
+
+1. profiles
+2. user_roles
+3. admin_permissions
+4. products
+5. product_images
+6. categories
+7. collections
+8. collection_products
+9. product_variants
+10. inventory
+11. inventory_movements
+12. carts
+13. cart_items
+14. wishlists
+15. wishlist_items
+16. addresses
+17. orders
+18. order_items
+19. order_status_history
+20. payments
+21. coupons
+22. coupon_redemptions
+23. reviews
+24. return_requests
+25. refund_records
+26. notifications
+27. website_settings
+28. homepage_sections
+29. banners
+30. serviceable_pincodes
+31. shipping_methods
+32. admin_activity_logs
+33. analytics_events
+
+Create proper:
+- Primary keys.
+- Foreign keys.
+- Unique constraints.
+- Indexes.
+- Check constraints.
+- Timestamps.
+- Database relationships.
+
+Use UUID identifiers where appropriate.
+
+Create SQL migration files.
+
+Create reusable database functions and safe transaction logic where required.
+
+Enable Row Level Security on all relevant tables.
+
+Define policies for:
+- Anonymous visitors.
+- Authenticated customers.
+- Owners.
+- Managers.
+- Order staff.
+- Content staff.
+
+Ensure customers cannot access another customer's data.
+
+Ensure staff permissions cannot be bypassed by frontend manipulation.
+
+Use Supabase Storage for:
+- Product images.
+- Category images.
+- Banners.
+- Brand assets.
+
+Create appropriate storage buckets and access policies.
+
+# 21. SECURITY
+
+Security is mandatory.
+
+Implement:
+
+- Supabase Auth.
+- Role-based authorization.
+- Server-side validation.
+- Row Level Security.
+- Secure admin routes.
+- Secure API endpoints.
+- Rate limiting for sensitive endpoints.
+- Input sanitization.
+- Secure image upload validation.
+- File size restrictions.
+- Payment webhook verification.
+- Server-side price verification.
+- Atomic inventory operations.
+- Duplicate order protection.
+- Audit logs.
+- Error handling.
+
+IMPORTANT SECRET MANAGEMENT:
+
+Never expose:
+- Supabase service_role key.
+- Supabase secret keys.
+- Database passwords.
+- Razorpay secret.
+- WhatsApp access token.
+- Other private credentials.
+
+Public frontend keys may be used only where appropriate.
+
+All private credentials must be accessed through server-side environment variables.
+
+Create an .env.example containing variable names and placeholder values, never actual secrets.
+
+# 22. WEBSITE PERFORMANCE AND SEO
+
+Optimize for 2026 web standards.
+
+Implement:
+- Responsive images.
+- Lazy loading.
+- Modern image formats.
+- Efficient caching.
+- Code splitting.
+- Optimized database queries.
+- Server-side rendering where beneficial.
+- Core Web Vitals optimization.
+- Accessibility.
+- Semantic HTML.
+- Keyboard navigation.
+
+SEO:
+- Dynamic titles.
+- Meta descriptions.
+- Product metadata.
+- Open Graph.
+- Canonical URLs.
+- XML sitemap.
+- Robots.txt.
+- Product structured data.
+- Breadcrumb structured data.
+- Image alt attributes.
+
+Make the website search-engine friendly.
+
+# 23. MOBILE EXPERIENCE
+
+Mobile is a priority.
+
+Design specifically for:
+- Android smartphones.
+- iPhones.
+- Tablets.
+- Laptops.
+- Large desktop screens.
+
+Mobile requirements:
+
+- Excellent responsive navigation.
+- Smooth mobile menu.
+- Product grid optimization.
+- Easy filtering.
+- Comfortable product selection.
+- Sticky add-to-cart.
+- Easy checkout.
+- WhatsApp contact.
+- Responsive order tracking.
+- Responsive admin dashboard.
+
+No horizontal overflow.
+
+No broken layouts.
+
+No unreadable text.
+
+No overlapping elements.
+
+# 24. PRODUCT PHOTOGRAPHY AND VISUAL CONTENT
+
+The website must look like a premium real fashion store.
+
+Use actual client-provided product photographs whenever possible.
+
+For temporary fashion campaign visuals, use properly licensed images from suitable sources such as:
+- Pexels.
+- Pixabay.
+- Properly licensed Freepik assets.
+
+Do not use Unsplash.
+
+Pinterest and Google Images may be used for research and visual inspiration only, not for copying copyrighted images.
+
+Never present unrelated editorial photographs as actual purchasable products.
+
+Create a professional fallback image for products without uploaded photography.
+
+Keep image ratios and presentation consistent.
+
+# 25. CUSTOMER SUPPORT AND CONTACT
+
+Create a professional Contact page.
+
+Display:
+
+ARORA GARMENTS
+
+CV59+RH9, Faislabad,
+Bulandshahr, Uttar Pradesh 203001, India.
+
+Phone:
++91 9897694349
++91 9759147004
+
+Instagram:
+@arora_garments001
+@arora._.garments
+
+Opening Hours:
+10:00 AM – 8:30 PM, Monday to Sunday.
+
+Include:
+- Google Maps embed or directions link.
+- Click-to-call buttons.
+- WhatsApp buttons.
+- Instagram links.
+- Contact form.
+
+Use verified information only.
+
+# 26. TECHNICAL STACK
+
+Use this preferred architecture:
+
+Frontend:
+Next.js with App Router and TypeScript.
+
+Styling:
+Tailwind CSS.
+
+UI:
+Accessible, reusable component architecture.
+
+Animation:
+Framer Motion, used selectively.
+
+Backend:
+Next.js server-side APIs and Server Actions.
+
+Database:
+Supabase PostgreSQL.
+
+Authentication:
+Supabase Auth.
+
+Storage:
+Supabase Storage.
+
+Payment:
+Razorpay.
+
+Messaging:
+WhatsApp Business Cloud API.
+
+PDF:
+Server-side PDF generation.
+
+Hosting:
+Vercel.
+
+Source Control:
+GitHub.
+
+Use current stable, mutually compatible versions of dependencies at implementation time. Avoid unnecessary beta packages.
+
+# 27. PROJECT STRUCTURE
+
+Organize the application professionally.
+
+Separate:
+
+- Public website.
+- Customer account.
+- Admin dashboard.
+- Shared UI components.
+- Database clients.
+- Authentication utilities.
+- Authorization utilities.
+- Server actions.
+- API routes.
+- Validation schemas.
+- Payment services.
+- WhatsApp services.
+- Invoice services.
+- Analytics services.
+- Database migrations.
+- Tests.
+
+Use clean and maintainable architecture.
+
+Avoid putting the entire application in one giant file.
+
+# 28. TESTING REQUIREMENTS
+
+Before declaring the project complete, test:
+
+CUSTOMER:
+- Registration.
+- Login.
+- Product browsing.
+- Search.
+- Filters.
+- Product variants.
+- Wishlist.
+- Cart.
+- Checkout.
+- COD.
+- Online payment verification.
+- Order confirmation.
+- Order history.
+- Tracking.
+- Invoice download.
+
+ADMIN:
+- Admin authentication.
+- Staff permissions.
+- Product creation.
+- Product editing.
+- Image uploading.
+- Category management.
+- Variant management.
+- Stock updates.
+- Order management.
+- Invoice generation.
+- Analytics.
+- Homepage customization.
+
+SECURITY:
+- Customer data isolation.
+- Admin access restrictions.
+- RLS policies.
+- API authorization.
+- Payment verification.
+- Inventory race conditions.
+
+DEVICES:
+- Mobile.
+- Tablet.
+- Desktop.
+
+Do not mark an integration complete until it has actually been tested with valid configuration.
+
+# 29. IMPLEMENTATION PHASES
+
+Follow these phases in order.
+
+PHASE 1 — FOUNDATION
+- Inspect reference screenshot.
+- Establish project structure.
+- Create design system.
+- Build responsive frontend.
+- Create navigation and all core pages.
+
+PHASE 2 — SUPABASE
+- Connect Supabase.
+- Create database schema.
+- Create migrations.
+- Set up RLS.
+- Configure authentication.
+- Configure storage.
+
+PHASE 3 — STORE FUNCTIONALITY
+- Dynamic products.
+- Categories.
+- Collections.
+- Search.
+- Filters.
+- Product variants.
+- Wishlist.
+- Shopping cart.
+
+PHASE 4 — CHECKOUT
+- Address management.
+- Local serviceability.
+- COD.
+- Razorpay.
+- Order creation.
+- Order confirmation.
+
+PHASE 5 — ADMIN
+- Multiple administrator accounts.
+- Role permissions.
+- Product management.
+- Inventory.
+- Orders.
+- Customers.
+- Homepage CMS.
+
+PHASE 6 — INTEGRATIONS
+- WhatsApp.
+- PDF invoices.
+- Shipping management.
+- Notifications.
+
+PHASE 7 — ANALYTICS
+- Sales dashboard.
+- Reports.
+- Product analytics.
+- Inventory analytics.
+
+PHASE 8 — FINAL QUALITY
+- Security testing.
+- Responsive testing.
+- Performance.
+- SEO.
+- Bug fixing.
+- Deployment.
+
+# 30. CRITICAL AI DEVELOPMENT INSTRUCTIONS
+
+You are responsible for implementing the actual application, not just describing how it should work.
+
+Follow these rules:
+
+1. First inspect the project environment and existing files.
+2. Preserve useful existing work.
+3. Do not unnecessarily recreate or overwrite the project.
+4. Build the actual frontend and backend.
+5. Connect the real Supabase project.
+6. Create database migrations.
+7. Implement actual CRUD operations.
+8. Implement actual authentication.
+9. Implement actual order creation.
+10. Implement real inventory management.
+11. Implement actual invoice generation.
+12. Implement real analytics queries.
+13. Connect external integrations only when credentials are configured.
+14. Do not use mock data in production.
+15. Do not create decorative buttons without functionality.
+16. Do not leave broken links.
+17. Do not claim successful deployment without verifying it.
+18. Explain every required environment variable.
+19. Provide clear instructions for manual setup steps.
+20. Fix errors before moving to the next phase.
+
+If any required information is missing, create a configurable setting instead of inventing information.
+
+If a feature requires an external account or API credential, build the integration and clearly identify what remains to be configured.
+
+If the entire implementation cannot fit into one generation, continue in structured phases while preserving the project architecture and existing code.
+
+Never sacrifice security or working functionality for visual appearance.
+
+# FINAL GOAL
+
+Deliver a fully functional, premium, modern 2026 e-commerce platform for ARORA GARMENTS.
+
+The owner should be able to independently manage:
+
+- Products.
+- Product photographs.
+- Prices.
+- Sizes.
+- Colours.
+- Inventory.
+- Categories.
+- Collections.
+- Orders.
+- Customers.
+- Invoices.
+- Payments.
+- Shipping.
+- Website banners.
+- Homepage content.
+- Staff permissions.
+- Analytics.
+
+The customer should enjoy a smooth, professional fashion-shopping experience on every device.
+
+The final platform must be scalable, secure, maintainable, fast and ready for real business operations.
+
+START WITH PROJECT INSPECTION AND ARCHITECTURE, THEN IMPLEMENT THE COMPLETE APPLICATION. DO NOT STOP AT A DESIGN MOCKUP.

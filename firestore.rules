@@ -1,0 +1,110 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Helper Functions ---
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isStaffRole(role) {
+      return role in ['owner', 'manager', 'order_staff', 'content_staff'];
+    }
+
+    function isBootstrapOwner() {
+      return isAuthenticated()
+        && request.auth.token.email == 'owner@aroragarments.in'
+        && request.auth.token.email_verified == true;
+    }
+
+    function isAdmin() {
+      return isBootstrapOwner() || (
+        isAuthenticated()
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && isStaffRole(get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role)
+      );
+    }
+
+    function validOrderStatus(status) {
+      return status in ['pending', 'awaiting_payment'];
+    }
+
+    function validPaymentMethod(method) {
+      return method in ['COD', 'UPI_WHATSAPP', 'WHATSAPP_MANUAL'];
+    }
+
+    // --- Connection Probe (read-only) ---
+    match /test/{docId} {
+      allow read: if docId == 'connection';
+      allow write: if false;
+    }
+
+    // --- Public Storefront Settings & Themes (Admin-managed) ---
+    match /site_settings/{settingId} {
+      allow read: if settingId in ['branding', 'appearance', 'business_info', 'payment_settings'] || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /themes/{themeId} {
+      allow read: if themeId in ['modern-classic', 'premium-luxury', 'urban-streetwear', 'festive-ethnic', 'family-fashion', 'editorial-minimal'] || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /categories/{categoryId} {
+      allow read: if resource.data.isActive == true || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /delivery_zones/{pincode} {
+      allow read: if resource.data.isActive == true || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /products/{productId} {
+      allow read: if resource.data.isPublished == true || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // --- Users & Isolated Private PII ---
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isOwner(userId)
+        && request.resource.data.keys().hasAll(['uid', 'displayName', 'role'])
+        && request.resource.data.uid == userId
+        && (request.resource.data.role == 'customer' || isBootstrapOwner());
+      allow update: if isAdmin() || (
+        isOwner(userId)
+        && request.resource.data.role == resource.data.role
+        && request.resource.data.uid == resource.data.uid
+      );
+      allow delete: if isAdmin();
+
+      match /private/{docId} {
+        allow read, write: if isOwner(userId) || isAdmin();
+      }
+    }
+
+    // --- Customer Orders ---
+    match /orders/{orderId} {
+      allow read: if isAdmin() || (isAuthenticated() && resource.data.ownerId == request.auth.uid);
+      allow create: if isAdmin() || (
+        isAuthenticated()
+        && request.resource.data.ownerId == request.auth.uid
+        && request.resource.data.grandTotal is number
+        && request.resource.data.grandTotal >= 0
+        && validOrderStatus(request.resource.data.paymentStatus)
+        && validPaymentMethod(request.resource.data.paymentMethod)
+      );
+      allow update, delete: if isAdmin();
+    }
+
+    // --- Default Deny Catch-All ---
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

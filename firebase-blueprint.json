@@ -1,0 +1,135 @@
+{
+  "entities": {
+    "SiteSetting": {
+      "title": "SiteSetting",
+      "description": "Public storefront configuration documents such as branding, appearance theme settings, business_info, and UPI payment QR details (no secret keys).",
+      "type": "object",
+      "properties": {
+        "key": { "type": "string", "description": "Setting document key" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["key"]
+    },
+    "ThemePreset": {
+      "title": "ThemePreset",
+      "description": "Storefront design system themes configurable by admins in /admin/appearance.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "isDefault": { "type": "boolean" }
+      },
+      "required": ["id", "name"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Catalog product synchronized from Arora Garments inventory.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "department": { "type": "string" },
+        "regularPrice": { "type": "number" },
+        "discountedPrice": { "type": "number" },
+        "isPublished": { "type": "boolean" },
+        "reviewStatus": { "type": "string", "enum": ["approved", "draft_needs_review"] }
+      },
+      "required": ["id", "title", "slug", "department", "regularPrice", "isPublished"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Department and subcategory taxonomy.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "department": { "type": "string" }
+      },
+      "required": ["id", "name", "slug", "department"]
+    },
+    "DeliveryZone": {
+      "title": "DeliveryZone",
+      "description": "Serviceable PIN code delivery zones in and around Bulandshahr.",
+      "type": "object",
+      "properties": {
+        "pincode": { "type": "string" },
+        "townName": { "type": "string" },
+        "areaName": { "type": "string" },
+        "deliveryFee": { "type": "number" },
+        "isActive": { "type": "boolean" }
+      },
+      "required": ["pincode", "areaName", "deliveryFee", "isActive"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Public-safe user profile and authorization role.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string", "enum": ["customer", "owner", "manager", "order_staff", "content_staff"] }
+      },
+      "required": ["uid", "displayName", "role"]
+    },
+    "UserPrivateInfo": {
+      "title": "UserPrivateInfo",
+      "description": "Isolated PII subcollection storing customer email, phone, and saved addresses.",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "phone": { "type": "string" }
+      }
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer order record mirrored for authenticated Firebase tracking.",
+      "type": "object",
+      "properties": {
+        "orderNumber": { "type": "string" },
+        "ownerId": { "type": "string" },
+        "grandTotal": { "type": "number" },
+        "paymentMethod": { "type": "string", "enum": ["COD", "UPI_WHATSAPP", "WHATSAPP_MANUAL"] },
+        "paymentStatus": { "type": "string" },
+        "orderStatus": { "type": "string" }
+      },
+      "required": ["orderNumber", "ownerId", "grandTotal", "paymentMethod", "paymentStatus", "orderStatus"]
+    }
+  },
+  "firestore": {
+    "/site_settings/{settingId}": {
+      "schema": { "$ref": "#/entities/SiteSetting" },
+      "description": "Public storefront settings (branding, appearance, business_info, payment_settings)."
+    },
+    "/themes/{themeId}": {
+      "schema": { "$ref": "#/entities/ThemePreset" },
+      "description": "Theme definitions synced for live storefront appearance."
+    },
+    "/products/{productId}": {
+      "schema": { "$ref": "#/entities/Product" },
+      "description": "Storefront catalog products; drafts visible only to admins."
+    },
+    "/categories/{categoryId}": {
+      "schema": { "$ref": "#/entities/Category" },
+      "description": "Public product categories and subcategories."
+    },
+    "/delivery_zones/{pincode}": {
+      "schema": { "$ref": "#/entities/DeliveryZone" },
+      "description": "Bulandshahr & surrounding PIN code delivery zones."
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "User profile document; role immutable to non-admins."
+    },
+    "/users/{userId}/private/{docId}": {
+      "schema": { "$ref": "#/entities/UserPrivateInfo" },
+      "description": "Owner-only private PII subcollection."
+    },
+    "/orders/{orderId}": {
+      "schema": { "$ref": "#/entities/Order" },
+      "description": "Orders owned by authenticated customers or managed by admins."
+    }
+  }
+}
